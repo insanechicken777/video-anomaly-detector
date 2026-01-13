@@ -1,0 +1,11 @@
+[run]
+source = .
+omit =
+    */venv_tf/*
+    */venv2/*
+    */site-packages/*
+    */tests/*
+    */__pycache__/*
+    */cv2/*
+    */config-3.py
+    */config.py

@@ -1,0 +1,79 @@
+:root {
+  --bg-color: #1a001f;
+  --card-color: #2d002e;
+  --primary-pink: #ff4da6;
+  --hover-pink: #ff80bf;
+  --text-color: #ffe6f0;
+  --accent-border: #ff99cc;
+  --neon-glow: 0 0 12px rgba(255, 77, 166, 0.4);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-color);
+  padding: 1rem 2rem;
+  box-shadow: var(--neon-glow);
+  border-bottom: 2px solid var(--accent-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-pink);
+  text-shadow: 0 0 8px var(--primary-pink);
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center; /* 👈 Ensures everything is vertically centered */
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: var(--hover-pink);
+  text-shadow: 0 0 6px var(--hover-pink);
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--hover-pink);
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+.logout-button {
+  background-color: #ff007f;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60073;
+}

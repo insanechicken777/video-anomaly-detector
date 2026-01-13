@@ -1,0 +1,75 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #ffaad9; /* Neon pink text */
+  background-color: #1a0025; /* Deep purple background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset + Base Layout */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1a0025;
+  color: #ffaad9;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #ff6ec7;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+a:hover {
+  color: #ffb3ec;
+  text-shadow: 0 0 10px #ffb3ec;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #ff66c4;
+  text-shadow:
+    0 0 5px #ff33cc,
+    0 0 10px #ff33cc,
+    0 0 20px #ff33cc;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ff007f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #ff5ec4;
+}
+button:hover {
+  background-color: #ff33a6;
+  box-shadow: 0 0 20px #ff66c4;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Optional media query removed as the theme is fixed dark */
